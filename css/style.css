@@ -143,10 +143,15 @@ footer div{
 /* ================ */
 
 #location_Area{
+	height: auto;
 	margin-top: 5%;
 }
 /* ================ */
+#Traf_info_Area{
+	height: auto;
+}
 
+/* ================ */
 /*垂直線*/
 .vline {
 	display: inline-block;
