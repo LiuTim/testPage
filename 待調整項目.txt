@@ -1,0 +1,7 @@
+2016 - 02 - 19
+
+index頁面，footer location information
+
+可以試試看CSS內的高思模糊
+
+about頁面，payment下方四張圖
