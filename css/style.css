@@ -54,7 +54,6 @@
 	height: 5%;
 	margin: 5% 0% 0% 0%;
 	padding: 0%;
-	/*background-color: #FFD2D2;*/
 }
 #word_area_Left{
 	height: auto;
@@ -110,21 +109,13 @@ footer div{
 	top: 0%;
 	left: 1%;
 }
-
-#location_info img{
-	height: auto;
-	position: relative;
-	top: 0%;
-	left: 50%;
-	margin-top: 4%;
-}
 /*==================*/
 
 /* About.html css style */
-#aboutPage{
+#aboutPage #aboutPage_container{
 	font-family:Arial;
 	font-size: 18px;
-	/*background-color: #FFD2D2;	*/
+	width: 100%;
 }
 #aboutPage a{
 	color:#000000;
@@ -132,26 +123,82 @@ footer div{
 #subnavbar ul{
 	margin-left: 33%;
 }
+/* ================ */
+
+/* 介紹區塊 */
 #Intro_Area div{
 	margin-top: 1%;
 	margin-bottom: 1%;
 }
-#Intro_Area img{
-	width: 75%;
-	height: auto;
-}
 /* ================ */
 
+/* 地圖區塊 */
 #location_Area{
 	height: auto;
 	margin-top: 5%;
 }
+#location_Area .about_locTitle{
+	font-size: 60px;
+	margin: 0%;
+	padding: 0%;
+}
 /* ================ */
+
+/* 交通資訊區塊 */
 #Traf_info_Area{
 	height: auto;
+	margin-top: 5%;
+	position: relative;
 }
-
+#Traf_info_AreaBG{
+	position: absolute;
+   left: 0%;
+   top: 0%;
+   z-index: -1;
+	height: 100%;
+	width: 100%;
+}	
+#Traf_info_Area div{
+	margin-top: 3%;
+}
+#overwordCloud{
+	height: 15%;
+	width:20%;
+	position: absolute;
+   left: 50%;
+   top: 10%;
+}
 /* ================ */
+
+/* 交易資訊區塊 */
+#Payment_Area{
+	margin-top: 10%;
+}
+.payment_contentTitle{
+	font-size: 20px;
+	color:#B7272D;
+	margin: 10% 0% 0% 0%;
+}
+.payment_contentSubTitle{
+	font-size: 20px;
+	color:#000000;
+	margin: 0%;
+}
+.payment_content{
+	font-size: 15px;
+	color:#333333;
+	margin: 0% 0% 0% 0%;
+	padding: 0%;
+}
+/* ================ */
+
+/* about 頁面 標題字專用 */
+.aboutContent_title{
+	margin-top: 4%;
+	font-size: 60px;
+}
+/* ================ */
+
 /*垂直線*/
 .vline {
 	display: inline-block;
@@ -159,7 +206,6 @@ footer div{
    height:310px;
    width:3px;
    background:black;
-   top:0%;
 }
 /*======*/
 
