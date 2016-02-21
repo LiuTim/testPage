@@ -132,9 +132,9 @@ footer div{
 }
 /* ================ */
 
-/* 地圖區塊 */
+/* Location 區塊 */
 #location_Area{
-	height: auto;
+	height: 100%;
 	margin-top: 5%;
 }
 #location_Area .about_locTitle{
@@ -144,7 +144,7 @@ footer div{
 }
 /* ================ */
 
-/* 交通資訊區塊 */
+/* Traffic Information 區塊 */
 #Traf_info_Area{
 	height: auto;
 	margin-top: 5%;
@@ -202,10 +202,10 @@ footer div{
 /*垂直線*/
 .vline {
 	display: inline-block;
-   position:relative;
-   height:310px;
-   width:3px;
-   background:black;
+   	position:relative;
+   	height:310px;
+   	width:3px;
+   	background:black;
 }
 /*======*/
 
