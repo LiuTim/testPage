@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	$("#content").load("indexContent.html");
+
 	$(window).bind('hashchange', function() {
  		var getUrlHash = window.location.hash;
 		console.log(getUrlHash);
