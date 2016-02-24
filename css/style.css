@@ -12,7 +12,9 @@
     margin-right:-4px;
 }
 /*============================*/
-
+body{
+	overflow-x: hidden;
+}
 #content{
 	height: auto;
 	margin: 5% 0% 0% 0%;
@@ -67,9 +69,11 @@
 /*產品照面區塊*/
 #prod_pic{
 	height: 5%;
+	padding: 0%;
 }
 #prod_2Dpic{
 	height: 5%;
+	padding: 0%;
 }
 /*==================*/
 
@@ -86,7 +90,7 @@
 
 /*footer區塊*/
 footer{
-	height: 300px;
+	height: auto;
 	font-family:Arial;
 	color:#FFFFFF;
 	margin: 5% 0% 0% 0%;
@@ -94,10 +98,12 @@ footer{
 footer div{
 	background-color: #1A1A1A;
 	height: auto;
+	margin: 0%;
+	padding: 0% 0% 2% 0%;
 }
 #shareArea{
 	height: 20%;
-	padding-top: 1%;
+	padding: 1% 0% 0% 0%;
 }
 #shareArea ul{
 	list-style-type: none;
@@ -111,9 +117,7 @@ footer div{
 	left: 1%;
 }
 #location_info{
-	position: relative;
-	top: 10%;
-	left: 0%;
+	margin-top: 1.5%;
 }
 /*==================*/
 
@@ -125,9 +129,10 @@ footer div{
 }
 #aboutPage a{
 	color:#000000;
+	font-size: 24px;
 }
 #subnavbar ul{
-	margin-left: 33%;
+	margin-left: 25%;
 }
 /* ================ */
 
@@ -148,7 +153,7 @@ footer div{
 	font-size: 60px;
 	margin: 0%;
 	padding: 0%;
-	letter-spacing:3px;
+	letter-spacing:0px;
 }
 /* ================ */
 
