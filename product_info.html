@@ -3,12 +3,35 @@
 	<div class="row row-center">
 		<div class="col-xs-10 col-md-10 col-lg-10 text-right">
 			<p class="web_location">You are here：
-				<span id="Level0"></span>/
-				<span id="Level1"></span>/
-				<span id="Level2"></span>/
-				<span id="Level3"></span>
+			<span id="Level0"></span>
+			<span id="Level1"></span>
+			<span id="Level2"></span>
+			<span id="Level3"></span>
 			</p>
 		</div>
 	</div>
 
 </div>
+
+<script type="text/javascript">
+	
+	var getUrlHash = window.location.hash;
+
+	console.log("test");
+
+	var ss = getUrlHash.split("_");
+
+	for (var i in ss) {
+		var Name=ss[i].toString()
+
+		console.log("in innerSpan function"+Name);
+
+		if(document.getElementsByClassName("web_location")){
+			console.log("yes");
+			document.getElementById("Level"+i).innerHTML = Name;
+		}else{
+			console.log("NO")
+		}			
+	}
+
+</script>
