@@ -1097,12 +1097,13 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #BBBBBB;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  /*color: #23527c;*/
+  color: #808080;
   text-decoration: underline;
 }
 a:focus {
@@ -2318,8 +2319,9 @@ th {
 .table-bordered > thead > tr > td {
   border-bottom-width: 2px;
 }
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #f9f9f9;
+.table-striped > tbody > tr:nth-of-type(even) {
+  /*background-color: #f9f9f9;*/
+  background-color: #E1E1E1;
 }
 .table-hover > tbody > tr:hover {
   background-color: #f5f5f5;

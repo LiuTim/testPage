@@ -12,6 +12,7 @@
     margin-right:-4px;
 }
 /*============================*/
+
 body{
 	overflow-x: hidden;
 }
@@ -120,6 +121,31 @@ footer div{
 	margin-top: 1.5%;
 }
 /*==================*/
+
+/* 梯形 */
+.parallelogram {
+	-webkit-transform: skew(-17deg);
+	-moz-transform: skew(-17deg);
+	-o-transform: skew(-17deg);
+	-ms-transform: skew(-17deg);
+	transform: skew(-17deg);
+	background: #F2E421;
+}
+.para_Postion1{
+	width: 60vw;
+	height: 4vw;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+}
+.para_Postion2{
+	width: 70vw;
+	height: 4vw;
+	position: absolute;
+	top: 33%;
+	left: 18.5%;
+}
+/*============================================================================*/
 
 
 /* About.html css style */
@@ -238,43 +264,7 @@ footer div{
 	font-size: 5vw;
 	letter-spacing:3px;
 }
-/* ================ */
-
-/*垂直線*/
-.vline {
-	display: inline-block;
-   position:relative;
-   left: -45.5%;
-   height:310px;
-   width:3px;
-   background:black;
-}
-/*======*/
-
-/* 梯形 */
-.parallelogram {
-	-webkit-transform: skew(-17deg);
-	-moz-transform: skew(-17deg);
-	-o-transform: skew(-17deg);
-	-ms-transform: skew(-17deg);
-	transform: skew(-17deg);
-	background: #F2E421;
-}
-.para_Postion1{
-	width: 60vw;
-	height: 4vw;
-	position: absolute;
-	top: 20%;
-	left: 20%;
-}
-.para_Postion2{
-	width: 70vw;
-	height: 4vw;
-	position: absolute;
-	top: 33%;
-	left: 18.5%;
-}
-/*=======*/
+/*============================================================================*/
 
 /* product.html css style */
 
@@ -296,8 +286,145 @@ footer div{
 	color: #BBBBBB;
 }
 .ledProd_L1_Font{
-	font-size: 1.5vw;
+	font-size: 1.2vw;
+}
+/*============================================================================*/
+
+/*  Product_info Page  */
+
+#loca_info{
+	margin: 8% 0% 0% 0%;
+}
+.web_location{
+	color: #D5D5D5;
+}
+/* 使用者 目前位置 */
+
+#prod_info{
+	position: relative;
+	left: 9%;
+}
+
+#prod_infoPic{
+	height: 80%;
+	margin: 5% 0% 0% 0%; 
+}
+.prod_info_title{
+	font-size: 15vw;
+	color: #000000;
+	margin: 3% 0% 0% 0%;
+	padding: 0%;
+	position: absolute;
+	top : -6%;
+	left: 65%;
+}
+.prod_info_subtitle{
+	font-size: 3vw;
+	color: #4D4D4D;
+}
+.prod_infoFormatPosition{
+	position: relative;
+	left: 20%;
+}
+.prod_infoItemPosition{
+	margin-top: 8%;
+}
+#prod_info div table thead{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.relatedInfo_titlePosition{
+	position: absolute;
+	top : -10%;
+	left: 95%;
 }
 
 
-/*=======================*/
+/*============================================================================*/
+
+/*外邊界 margin set*/
+.marginTopSet_3{
+	margin-top: 3%;
+}
+.marginTopSet_5{
+	margin-top: 5%;
+}
+.marginleft_5{
+	margin: 0% 3% 0% 3%;	
+}
+
+/* 字體大小 */
+.prod_info_downFont{
+	display: inline;
+}
+.prod_info_Font60{
+	font-size: 3vw;
+	margin: 0%;
+	padding: 0%;
+}
+.prod_info_Font48{
+	font-size: 2.5vw;
+	margin: 0%;
+	padding: 0%;
+}
+.prod_info_Font32{
+	font-size: 2vw;
+	margin: 0%;
+	padding: 0%;
+}
+.prod_info_Font22{
+	font-size: 1.5vw;
+	margin: 0%;
+	padding: 0%;
+}
+.prod_info_Font{
+	font-size: 1vw;
+	margin: 0%;
+	padding: 0%;
+}
+/*============================================================================*/
+
+/*垂直線 about.html*/
+.vline {
+	display: inline-block;
+   position:relative;
+   left: -45.5%;
+   height:310px;
+   width:3px;
+   background:black;
+}
+/*======*/
+
+/*垂直線 product_info.html*/
+.vline_pordInfoPage {
+	display: inline-block;
+   position:absolute;
+   top: 10%;
+   left: -10%;
+   height:20vw;
+   width:2vw;
+   background:black;
+}
+/*======*/
+
+/*垂直線 product_info.html relatedInfo div use*/
+.vline_relatedInfo {
+	display: inline-block;
+   position:absolute;
+   top: -25%;
+   left: -35%;
+   height:7vw;
+   width:1vw;
+   background:#4D4D4D;
+}
+/*======*/
+
+/*水平線*/
+.horizontalLine{
+	height: 0.2vw;
+   width: 83.5%;
+   background-color: #4D4D4D;
+}
+/*======*/
+
+/*============================================================================*/
