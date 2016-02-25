@@ -39,34 +39,39 @@
 			<img src="image/format_icon_07.png"/>
 		</div>
 
-		<div class="col-xs-10 col-md-10 col-lg-10 prod_infoItemPosition">
+		<div class="col-xs-10 col-md-10 col-lg-10 prod_infoItemPosition tabbable">
 			<ul class="nav nav-tabs">
-			  <li role="presentation" class="active"><a href="#tab1">Specification</a></li>
-			  <li role="presentation"><a href="#tab2" >General information</a></li>
-			  <li role="presentation"><a href="#tab3" >Dimension</a></li>
+			  <li role="presentation" class="active"><a href="#pane1" data-toggle="tab">Specification</a></li>
+			  <li role="presentation"><a href="#pane2" data-toggle="tab">General information</a></li>
+			  <li role="presentation"><a href="#pane3" data-toggle="tab">Dimension</a></li>
 			</ul>
+			<div class="tab-content">
+				<div id="pane1" class="tab-pane col-center active">
+					<table class="table table-striped text-center marginTopSet_5">
+						<thead>
+							<tr>
+								<td>Model No.</td><td>Dimension (mm)</td><td>Input Voltage (V)</td><td>Watt (W)</td>
+								<td>CCT (K)</td><td>lm/w</td><td>Lumen Output (lm)</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>T84V1K6</td><td>Ø30 x 1198</td><td>115 VAC, FluorescentBallast 40W (V)</td>
+								<td>18</td><td>6000</td><td>110</td><td>2000</td>
+							</tr>
+							<tr>
+								<td>T84V1K4</td><td>Ø30 x 1198</td><td>115 VAC, FluorescentBallast 40W (V)</td>
+								<td>18</td><td>4000</td><td>110</td><td>2000</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
-			<div id="tab1 col-center">
-				<table class="table table-striped text-center marginTopSet_5">
-					<thead>
-						<tr>
-							<td>Model No.</td><td>Dimension (mm)</td><td>Input Voltage (V)</td><td>Watt (W)</td>
-							<td>CCT (K)</td><td>lm/w</td><td>Lumen Output (lm)</td>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>T84V1K6</td><td>Ø30 x 1198</td><td>115 VAC, FluorescentBallast 40W (V)</td>
-							<td>18</td><td>6000</td><td>110</td><td>2000</td>
-						</tr>
-						<tr>
-							<td>T84V1K4</td><td>Ø30 x 1198</td><td>115 VAC, FluorescentBallast 40W (V)</td>
-							<td>18</td><td>4000</td><td>110</td><td>2000</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div><!-- end nav & table -->
+				<div id="pane2" class="tab-pane">test tab2</div>
+
+				<div id="pane3" class="tab-pane">test tab3</div>
+			</div><!-- end tab-content -->
+		</div><!-- end nav & tableable -->
 		
 		<div class="col-xs-10 col-md-10 col-lg-10 horizontalLine"></div>
 		
