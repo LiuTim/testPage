@@ -7,7 +7,7 @@
     display:inline-block;
     float:none ;
     /* reset the text-align */
-    text-align:left;
+    /*text-align:left;*/
     /* inline-block space fix */
     margin-right:-4px;
 }
@@ -339,49 +339,92 @@ footer div{
 	left: 95%;
 }
 
+/*============================================================================*/
+
+/*  Contact Page  */
+#contactpage_Head img{
+	width: 120%;
+	height: auto;
+}
+.contactpage_title{
+	color: #FFFFFF;
+	position: absolute;
+	top: -5%;
+	left: 50%;
+}
+.contactpage_titlecontent{
+	color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	left: 53%;
+}
+
 
 /*============================================================================*/
 
 /*外邊界 margin set*/
+.marginSet_0{
+	margin: 0%;
+}
 .marginTopSet_3{
 	margin-top: 3%;
 }
 .marginTopSet_5{
 	margin-top: 5%;
 }
-.marginleft_5{
+.marginTopSet_6{
+	margin-top: 6%;
+}
+.marginTopSet_8{
+	margin-top: 8%;
+}
+.marginTopSet_10{
+	margin-top: 10%;
+}
+.margin-left-right_1{
+	margin: 0% 1% 0% 1%;	
+}
+.margin-left-right_5{
 	margin: 0% 3% 0% 3%;	
 }
 
+/*內邊界 padding set*/
+.paddingSet_0{
+	padding: 0%;
+}
+
 /* 字體大小 */
+.pagetitle{
+	font-size: 10vw;
+}
 .prod_info_downFont{
 	display: inline;
 }
 .prod_info_Font60{
 	font-size: 3vw;
-	margin: 0%;
-	padding: 0%;
 }
 .prod_info_Font48{
 	font-size: 2.5vw;
-	margin: 0%;
-	padding: 0%;
 }
 .prod_info_Font32{
 	font-size: 2vw;
-	margin: 0%;
-	padding: 0%;
 }
 .prod_info_Font22{
 	font-size: 1.5vw;
-	margin: 0%;
-	padding: 0%;
 }
 .prod_info_Font{
 	font-size: 1vw;
-	margin: 0%;
-	padding: 0%;
 }
+/*============================================================================*/
+
+/* 字體顏色 */
+.fontcolor_white{
+	color: white;
+}
+.fontcolor_808080{
+	color: #808080;
+}
+
 /*============================================================================*/
 
 /*垂直線 about.html*/
@@ -426,5 +469,14 @@ footer div{
    background-color: #4D4D4D;
 }
 /*======*/
+.Formhr{
+	height: 1px !important;
+   width: 100% !important; 
+   background-color: #4D4D4D !important;
+}
+input[type="radio"]{
+	margin-left: 4% !important;
+}
+
 
 /*============================================================================*/

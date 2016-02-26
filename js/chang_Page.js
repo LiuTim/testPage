@@ -15,11 +15,12 @@ $(document).ready(function(){
 			$("#content").load("product.html");
 		}
 		if(getUrlHash=="#product_Tube_self-ballasted_T5"){
-			$("#content").load("product_info.html");
+			$("#content").load("product_info.html");	
+		}
+		if(getUrlHash=="#contact"){
+			$("#content").load("Contact.html");
 			
 		}
-
-
 
 	});//end hashchange
 
