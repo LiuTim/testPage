@@ -13,9 +13,7 @@ $(document).ready(function(){
 		}
 		if(getUrlHash=="#product"){
 			$("#content").load("product.html");
-		}
-		if(getUrlHash=="#product_Tube_self-ballasted_T5"){
-			$("#content").load("product_info.html");	
+			$.getScript("js/getProdInfoPage.js");
 		}
 		if(getUrlHash=="#contact"){
 			$("#content").load("Contact.html");
