@@ -14,7 +14,7 @@
 
 	<div id="prod_info" class="row row-centered">
 
-		<img id="prod_infoPic" class="col-xs-10 col-md-10 col-lg-10 img-responsive" src="pic/product_info_pic.png"/>	
+		<img id="prod_infoPic" class="col-xs-10 col-md-10 col-lg-10 img-responsive" src="upload/PROD_LED_T5.png"/>	
 		<p class="prod_info_title">T5</p>
 	
 		<div class="col-xs-6 col-md-6 col-lg-6">
@@ -73,7 +73,7 @@
 		<div id="relatedInfo" class="col-xs-10 col-md-10 col-lg-10 marginTopSet_5">
 
 			<div class="col-xs-3 col-md-3 col-lg-3 margin-left-right_5">
-				<img src="pic/product_relatedInfo1.png"/>	
+				<img src="upload/PROD_LED_T8_related.png"/>	
 				<p class="prod_info_Font48 relatedInfo_titlePosition">T8</p>
 				<div class="pull-left">
 				</br></br>
@@ -88,7 +88,7 @@
 			</div>
 
 			<div class="col-xs-3 col-md-3 col-lg-3 margin-left-right_5">
-				<img src="pic/product_relatedInfo1.png"/>	
+				<img src="upload/PROD_LED_T5_related.png"/>	
 				<p class="prod_info_Font48 relatedInfo_titlePosition">T5</p>
 				<div class="pull-left">
 				</br></br>
@@ -152,9 +152,16 @@
 
 	if(getUrlHash=="#product_Tube_self-ballasted_T5"){
 
-		$.get('upload/T5data.csv', function(data) {
+		if($("#product_detail").find("#product_detailtr")){
+			console.log("have data"+"=");
+		}else{
+			console.log("no data");
+			
+		}
 
-			var html = "<tr>";
+		/*$.get('upload/T5data.csv', function(data) {
+
+			var html = "<tr >";
 
 			var rows = data.split("\n");
 
@@ -175,7 +182,7 @@
 			html += "</tr>";		
 			})
 			$('#product_detail').append(html);
-		});	
+		});*/
 	}
 
 </script> 
