@@ -19,7 +19,6 @@ body{
 #content{
 	height: auto;
 	margin: 5% 0% 0% 0%;
-	font-family: sourcehansans-tc;
 }	
 
 /* 圖片輪播區塊 */
@@ -149,17 +148,15 @@ footer div{
 
 
 /* About.html css style */
-#aboutPage #aboutPage_container{
-	font-family:Arial;
-	font-size: 1.5em;
-}
-#subnavbar{
+#subnavbar ul{
+	margin-right: 15%;
+   margin-left: 25%;
 	position: relative;
-	left: 27.5%;
+	/*left: 27.5%;*/
 }
 #aboutPage a{
 	color:#000000;
-	font-size: 1.5vw;
+	font-size: 21px;
 }
 /* ================ */
 
@@ -215,7 +212,7 @@ footer div{
 	width:20%;
 	position: absolute;
    left: 50%;
-   top: 10%;
+   top: 11%;
 }
 #Traf_info{
 	position: relative;
@@ -259,9 +256,6 @@ footer div{
 /* ================ */
 
 /* index 頁面 梯形內部用字體 */
-.SourceHanSans{
-	font-weight: 700;
-}
 .paraWordFont1{
 	font-size: 4vw;
 	letter-spacing:-2px;
@@ -375,8 +369,9 @@ footer div{
 .contactpage_titlecontent{
 	color: #FFFFFF;
 	position: absolute;
-	top: 50%;
-	left: 53%;
+	top: 40%;
+	left: 57.5%;
+	line-height: 50px;
 }
 
 
@@ -401,6 +396,12 @@ footer div{
 .marginTopSet_10{
 	margin-top: 10%;
 }
+.marginTopSet_25{
+	margin-top: 25%;
+}
+.marginTopSet_50{
+	margin-top: 50%;
+}
 .margin-left-right_1{
 	margin: 0% 1% 0% 1%;	
 }
@@ -412,6 +413,9 @@ footer div{
 .paddingSet_0{
 	padding: 0%;
 }
+.paddigSetTop_5{
+	padding-top: 5%;	
+}
 
 /* 字體大小 */
 .pagetitle{
@@ -421,7 +425,7 @@ footer div{
 	display: inline;
 }
 .prod_info_Font60{
-	font-size: 3vw;
+	font-size: 5vw;
 }
 .prod_info_Font48{
 	font-size: 2.5vw;
@@ -443,21 +447,46 @@ footer div{
 }
 /*============================================================================*/
 
-/* 字體顏色 */
+/* 文字相關設定 */
 .fontcolor_white{
 	color: white;
 }
 .fontcolor_808080{
 	color: #808080;
 }
+.setPFont{
+	line-height: 26px;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+@font-face {
+   font-family: SourceHanSans_bold;
+   src: url(font/SourceHanSansTWHK-Bold.otf);
+   font-weight: 700;
+}
+@font-face {
+   font-family: SourceHanSans_Medium;
+   src: url(font/SourceHanSansTWHK-Medium.otf);
+   font-weight: 600;
+}
 
+.SourceHanSansbold{
+	font-family: SourceHanSans_bold;
+}
+.SourceHanSansMedium{
+	font-family: SourceHanSans_Medium;
+}
 /*============================================================================*/
 
 /*垂直線 about.html*/
+.vlineliSpan{
+   position:relative;
+   top: 15px;
+}
 .vline {
 	display: inline-block;
    position:relative;
-   left: -45.5%;
+   left: -52.3%;
    height:310px;
    width:3px;
    background:black;
