@@ -1,4 +1,4 @@
-<div id="product_infoPage" class="SourceHanSans">
+<div id="product_infoPage" class="SourceHanSansMedium">
 
 	<div id="loca_info" class="row row-centered">
 		<div class="col-xs-11 col-md-11 col-lg-11 text-right">
@@ -12,10 +12,10 @@
 	</div>
 	<!-- end location info -->
 
-	<div id="prod_info" class="row row-centered">
+	<div id="prod_info" class="row">
 
 		<img id="prod_infoPic" class="col-xs-10 col-md-10 col-lg-10 img-responsive" src="upload/PROD_LED_T8.png"/>	
-		<div class="prod_info_title">T8</div>
+		<p class="prod_info_title SourceHanSansbold">T8</p>
 	
 		<div class="col-xs-6 col-md-6 col-lg-6">
 			</br></br></br>
@@ -32,10 +32,10 @@
 		<div class="col-xs-2 col-md-2 col-lg-2 prod_infoFormatPosition">
 			<div class="vline_pordInfoPage"></div>
 			</br></br></br>
-			<p class="prod_info_Font60">Ø30 </p>
-			<p class="prod_info_Font48">- </p>
-			<p>2’-4’ </p>
-			<p>590-1198 mm </p>
+			<span class="prod_info_Font60">Ø30 </span><br>
+			<span class="prod_info_Font48">- </span><br>
+			<span>2’-4’ </span><br>
+			<span>590-1198 mm </span><br>
 			<img src="image/format_icon_07.png"/>
 		</div>
 
@@ -45,7 +45,7 @@
 			  <li role="presentation"><a href="#pane2" data-toggle="tab">General information</a></li>
 			  <li role="presentation"><a href="#pane3" data-toggle="tab">Dimension</a></li>
 			</ul>
-			<div class="tab-content">
+			<div class="tab-content" >
 				<div id="pane1" class="tab-pane col-center active">
 					<table class="table table-striped text-center marginTopSet_5">
 						<thead>
@@ -54,7 +54,7 @@
 								<td>CCT (K)</td><td>lm/w</td><td>Lumen Output (lm)</td>
 							</tr>
 						</thead>
-						<tbody id="product_detail">
+						<tbody id="product_detail" >
 							<!-- 以JS Jquery 載入 CSV 檔案 -->
 						</tbody>
 					</table>
@@ -120,7 +120,6 @@
 		</div><!-- end related Info div-->
 
 	</div><!-- end prod_info -->
-
 </div><!-- end id="product_infoPage" -->
 
 <script type="text/javascript">
@@ -147,7 +146,7 @@
 </script>
 
 <script type="text/javascript">
-	
+
 	var getUrlHash = window.location.hash;
 
 	if(getUrlHash=="#product_Tube_self-ballasted_T8"){
@@ -157,12 +156,11 @@
 			var html = "<tr>";
 
 			var rows = data.split("\n");
-
 			// parse lines
 			rows.forEach( function getvalues(ourrow) {
 
 			var columns = ourrow.split(",");
-		
+				
 			html += "<td>" + columns[0] + "</td>";
 			html += "<td>" + columns[1] + "</td>";
 			html += "<td>" + columns[2] + "</td>";
@@ -170,12 +168,11 @@
 			html += "<td>" + columns[4] + "</td>";
 			html += "<td>" + columns[5] + "</td>";
 			html += "<td>" + columns[6] + "</td>";
-		
 			// close row
 			html += "</tr>";		
 			})
-			$('#product_detail').append(html);
-		});	
+			$('#product_detail').append(html);		
+		});
 	}
 
-</script> 
+</script>

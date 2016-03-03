@@ -45,7 +45,7 @@
 			  <li role="presentation"><a href="#pane2" data-toggle="tab">General information</a></li>
 			  <li role="presentation"><a href="#pane3" data-toggle="tab">Dimension</a></li>
 			</ul>
-			<div class="tab-content">
+			<div class="tab-content" >
 				<div id="pane1" class="tab-pane col-center active">
 					<table class="table table-striped text-center marginTopSet_5">
 						<thead>
@@ -54,7 +54,7 @@
 								<td>CCT (K)</td><td>lm/w</td><td>Lumen Output (lm)</td>
 							</tr>
 						</thead>
-						<tbody id="product_detail">
+						<tbody id="product_detail" >
 							<!-- 以JS Jquery 載入 CSV 檔案 -->
 						</tbody>
 					</table>
@@ -147,29 +147,21 @@
 </script>
 
 <script type="text/javascript">
-	
+
 	var getUrlHash = window.location.hash;
 
 	if(getUrlHash=="#product_Tube_self-ballasted_T5"){
 
-		if($("#product_detail").find("#product_detailtr")){
-			console.log("have data"+"=");
-		}else{
-			console.log("no data");
-			
-		}
-
 		$.get('upload/T5data.csv', function(data) {
 
-			var html = "<tr >";
+			var html = "<tr>";
 
 			var rows = data.split("\n");
-
 			// parse lines
 			rows.forEach( function getvalues(ourrow) {
 
 			var columns = ourrow.split(",");
-		
+				
 			html += "<td>" + columns[0] + "</td>";
 			html += "<td>" + columns[1] + "</td>";
 			html += "<td>" + columns[2] + "</td>";
@@ -177,12 +169,11 @@
 			html += "<td>" + columns[4] + "</td>";
 			html += "<td>" + columns[5] + "</td>";
 			html += "<td>" + columns[6] + "</td>";
-		
 			// close row
 			html += "</tr>";		
 			})
-			$('#product_detail').append(html);
+			$('#product_detail').append(html);		
 		});
 	}
 
-</script> 
+</script>
