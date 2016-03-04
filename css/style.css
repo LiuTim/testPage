@@ -187,6 +187,8 @@ footer div{
 #SymbangMap{
 	width: 45%;
 	height: 310px;
+	position: relative;
+	left: 2%;
 }
 /* ================ */
 
@@ -284,7 +286,7 @@ footer div{
 /* product.html css style */
 
 #ProductPage{
-	background-color: #F7F8F8;
+	background-color: #F4F5F5;
 	margin: 10% 0% 0% 0%;
 	padding: 5% 0% 0% 0%;
 }
@@ -292,16 +294,28 @@ footer div{
 .productPageTitleFont{
 	font-size: 10vw;
 }
-
 /* Product Page Product Level1 */
 #ledProd_L1{
-	margin: 10% 0% 0% 0%;
+	margin: 8% 0% 0% 0%;
+	position: relative;
+	left: 10%;
+}
+#ledProd_L1 div{
+	margin: 0% 2.5% 0% 0%;
 }
 #ledProd_L1 li a{
 	color: #BBBBBB;
 }
 .ledProd_L1_Font{
-	font-size: 1.2vw;
+	font-size: 1.1vw;
+	margin-left: 20%;
+}
+.PD_ParentNav li{
+	margin-left: 10%;
+}
+.PD_ParentNav li > a:hover{
+	color: #4D4D4D !important;
+	background-color: #F4F5F5;
 }
 /*============================================================================*/
 
@@ -336,9 +350,13 @@ footer div{
 	font-size: 3vw;
 	color: #4D4D4D;
 }
+.prod_infnTitlePosition{
+	position: relative;
+	left:20%;
+}
+
 .prod_infoFormatPosition{
 	position: relative;
-	left: 20%;
 }
 .prod_infoItemPosition{
 	margin-top: 8%;
@@ -350,7 +368,7 @@ footer div{
 .relatedInfo_titlePosition{
 	position: absolute;
 	top : -10%;
-	left: 95%;
+	left: 81%;
 }
 
 /*============================================================================*/
@@ -486,9 +504,9 @@ footer div{
 .vline {
 	display: inline-block;
    position:relative;
-   left: -52.3%;
-   height:310px;
-   width:3px;
+   left: -51.5%;
+   height: 310px;
+   width: 8px;
    background:black;
 }
 /*======*/
@@ -510,7 +528,7 @@ footer div{
 	display: inline-block;
    position:absolute;
    top: -25%;
-   left: -35%;
+   left: -40%;
    height:7vw;
    width:1vw;
    background:#4D4D4D;
