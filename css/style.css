@@ -335,9 +335,15 @@ footer div{
 	top : 0%;
 }
 
-#prod_infoPic{
-	height: 80%;
-	margin: 5% 0% 0% 0%; 
+#Prodpic_rotation{
+	width: 81%;
+	height: auto;
+	position: relative;
+	left: 1%;
+}
+#Prodpic_rotation img{
+	width: 100%;
+	height: auto;
 }
 .prod_info_title{
 	font-size: 15vw;
