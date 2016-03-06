@@ -1,7 +1,7 @@
 <div id="ContactPage">
 	
 	<div id="contactpage_Head" class="has-feedback marginTopSet_8 SourceHanSansbold">
-		<img class="img-responsive" src="pic/Contant_pic.jpg" />
+		<img class="img-responsive" src="image/Contant_pic.jpg" />
 		<p class="pagetitle contactpage_title ">Contact</p>
 		<p class="prod_info_Font22 contactpage_titlecontent fontcolor_white text-right ">
 			OUR&nbsp;CONTACT&nbsp;INFORMATION <br>
@@ -19,12 +19,13 @@
 				</p>
 			</div>
 
-			<form  class="col-xs-12 col-md-12 col-lg-12 col-centered prod_info_Font22" method="POST">
+			<form  id="CustomerInfo" class="col-xs-12 col-md-12 col-lg-12 col-centered prod_info_Font22" method="POST"
+				 	action="sendto.php" target="_blank">
 				<hr class="Formhr">
 	    			<label class="col-xs-3 col-md-3 col-lg-3">*Company Name :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="CompanyName">
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >Website :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >		
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Website">		
 				<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">*Contact Person :&nbsp;</label>
 					<label class="col-xs-3 col-md-3 col-lg-3 ">
@@ -32,40 +33,40 @@
 						<input  type="radio" name="ContactPersonRadio"  value="Mrs"> Mrs
 						<input  type="radio" name="ContactPersonRadio"  value="Miss"> Miss
 					</label>
-					<input class="col-xs-6 col-md-6 col-lg-6" type="text" >
+					<input class="col-xs-6 col-md-6 col-lg-6" type="text" name="ContactPersonName">
 				<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">*Email :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Email">
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >Title :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Title">
 	    		<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">*Tel :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Tel">
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >Fax :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Fax">
 	    		<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">*Moblie :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Mobile">
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >Country :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >	
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Country">	
 	    		<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">Skype :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >	
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Skype">	
 	    			<label class="col-xs-6 col-md-6 col-lg-6"></label>
 	    		<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">State/Province :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="State">
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >City :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="City">
 	    		<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">*ZIP CODE :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="ZIPCode">
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >Address :&nbsp;</label>
-	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" >
+	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Address">
 	    		<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">You are a</label>
 					<label class="col-xs-9 col-md-9 col-lg-9">
-						<input  type="radio" name="CustomerIdentity"  value="end user"> end user
+						<input  type="radio" name="CustomerIdentity"  value="EndUser"> end user
 						<input  type="radio" name="CustomerIdentity"  value="importer"> importer 
 						<input  type="radio" name="CustomerIdentity"  value="distributor"> distributor
 						<input  type="radio" name="CustomerIdentity"  value="manufacturer"> manufacturer 
@@ -88,11 +89,11 @@
 						<input  type="radio" name="SearchInfo"  value="TWTrade"> Taiwan Trade  
 						<input  type="radio" name="SearchInfo"  value="Google"> Google Search
 						<input  type="radio" name="SearchInfo"  value="Other"> Other 
-						<input  type="text"> 
+						<input  type="text" name="SearchInfoOther"> 
 					</label>
 				<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-6 col-md-6 col-lg-6 text-left">Please Specify Your Request</label>
-					<textarea class="col-xs-12 col-md-12 col-lg-12 text-left" rows="5"></textarea>
+					<textarea class="col-xs-12 col-md-12 col-lg-12 text-left" rows="5" name="request" form="CustomerInfo"></textarea>
 				<label class="col-xs-6 col-md-6 col-lg-6 text-left marginTopSet_3">Send me catalog?
 						<input  type="radio" name="SendCatalog"  value="yes"> Yes 
 						<input  type="radio" name="SendCatalog"  value="no"> Not Yet 
