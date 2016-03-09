@@ -1,28 +1,31 @@
 $(document).ready(function(){
 
-	$("#content").load("indexContent.html");
+	$(function(){
 
-	$(window).bind('hashchange', function() {
- 		var getUrlHash = window.location.hash;
+	  $(window).hashchange( function(){
+	  		location.hash
+		   if(location.hash=="#index"){
+				$("#content").load("indexContent.html");
+			}
+			if(location.hash=="#about"){
+				$("#content").load("about.html");
+			}
+			if(location.hash=="#product"){
+				$("#content").load("product.html");
+				$.getScript("js/getProdInfoPage.js");
+			}
+			if(location.hash=="#contact"){
+				$("#content").load("Contact.html");	
+			}
+	  })
+	  
+	$(window).hashchange();
 
-		if(getUrlHash=="#index"){
-			$("#content").load("indexContent.html");
-		}
-		if(getUrlHash=="#about"){
-			$("#content").load("about.html");
-		}
-		if(getUrlHash=="#product"){
-			$("#content").load("product.html");
-			$.getScript("js/getProdInfoPage.js");
-		}
-		if(getUrlHash=="#contact"){
-			$("#content").load("Contact.html");
-			
-		}
-
-	});//end hashchange
+	});
 
 })//end document.ready()
+
+
 
 
 

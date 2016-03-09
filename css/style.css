@@ -119,6 +119,13 @@ footer div{
 #location_info{
 	margin-top: 1.5%;
 }
+.Address_Position{
+	color: #9F9F9F;
+	letter-spacing:2px;
+	position: absolute;
+	top : 50px;
+	left: 61%;
+}
 /*==================*/
 
 /* 梯形 */
@@ -460,6 +467,9 @@ footer div{
 .prod_info_Font22{
 	font-size: 1.5vw;
 }
+.prod_info_Font18{
+	font-size: 1.2vw;
+}
 .prod_info_Font{
 	font-size: 1vw;
 }
@@ -472,6 +482,9 @@ footer div{
 /*============================================================================*/
 
 /* 文字相關設定 */
+.lineheight_2px{
+	line-height: 30px;
+}
 .fontcolor_white{
 	color: white;
 }
@@ -557,5 +570,23 @@ input[type="radio"]{
 	margin-left: 4% !important;
 }
 
+/*位置相關設定*/
+.setPosition_50{
+	position: relative;
+	top: 0%;
+	left: 50%;
+}
+/*圖片設定*/
+.setimgSize_25{
+	vertical-align:text-top;
+	height: 25%;
+	width: 25%;
+}
 
+
+/*表單*/
+.error
+{
+	border: 3px solid #800000;
+}
 /*============================================================================*/
