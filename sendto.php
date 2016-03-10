@@ -26,77 +26,110 @@
 
     $sys_time=date('Y-m-d H:i:s');
 
-    $mailContent = '<table align="center" cellpadding="5" cellspacing="2" width="100%">
-                        <tr>
-                            <td align="center" width="10%" class="name">留單時間</td>
-                            <td align="left" width="40%"  class="value">'.$sys_time.'</td>
-                        </tr>
-                         <tr>
-                            <td align="center" width="10%" class="name">Company Name : </td>
-                            <td align="left" width="40%"  class="value">'.$CompanyName.'</td>
-                            <td align="center" width="10%" class="name">Website : </td>
-                            <td align="left" width="40%"  class="value">'.$Website.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">Contact Person : </td>
-                            <td align="left" width="20%"  class="value">'.$ContactPerson.'</td>
-                            <td align="center" width="70%" class="value">'.$ContactPersonName.' </td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">Email : </td>
-                            <td align="left" width="40%"  class="value">'.$Email.'</td>
-                            <td align="center" width="10%" class="name">Title : </td>
-                            <td align="left" width="40%"  class="value">'.$Title.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">Tel : </td>
-                            <td align="left" width="40%"  class="value">'.$Tel.'</td>
-                            <td align="center" width="10%" class="name">Fax : </td>
-                            <td align="left" width="40%"  class="value">'.$Fax.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">Moblie : </td>
-                            <td align="left" width="40%"  class="value">'.$Moblie.'</td>
-                            <td align="center" width="10%" class="name">Country : </td>
-                            <td align="left" width="40%"  class="value">'.$Country.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">Skype : </td>
-                            <td align="left" width="40%"  class="value">'.$Skype.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">State/Province : </td>
-                            <td align="left" width="40%"  class="value">'.$State.'</td>
-                            <td align="center" width="10%" class="name">City : </td>
-                            <td align="left" width="40%"  class="value">'.$City.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">ZIP CODE : </td>
-                            <td align="left" width="40%"  class="value">'.$ZIP.'</td>
-                            <td align="center" width="10%" class="name">Address : </td>
-                            <td align="left" width="40%"  class="value">'.$Address.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">You are a  </td>
-                            <td align="left" width="40%" class="name">'.$CustomerIdentity.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">How many people </td>
-                            <td align="left" width="40%" class="value">'.$CustomerIdentity.'in your company</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">How do you know about our company </td>
-                            <td align="left" width="20%" class="value">'.$SearchInfo.'</td>
-                            <td align="left" width="20%" class="value">'.$SearchInfoOther.'</td>
-                        </tr>
-                        <tr>
-                            <td align="left" width="10%" class="value">'.$request.'</td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="10%" class="name">Send Catalog </td>
-                            <td align="left" width="40%" class="value">'.$SendCatalog.'</td>
-                        </tr>
-                    </table>';
+    $mailContent = '<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            font-family:Helvetica;
+            font-size: 18px;
+            margin: 0px;
+            padding: 0px;
+        }
+        table{
+            width: 800px; 
+            height: auto; 
+            margin: 0px; 
+            padding: 0px;
+        }
+        .name{
+            font-weight: bold;
+            width: 100px;
+            font-size: 22px;
+            background-color: #4F4F4F;
+            color: white;
+        }
+        .value{
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <table align="center" >
+        <tr><td align="center" class="name">留單時間</td>
+            <td align="left" class="value">'.$sys_time.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">Company Name : </td>
+            <td align="left"  class="value">'.$CompanyName.'</td>
+            <td align="center"  class="name">Website : </td>
+            <td align="left"  class="value">'.$Website.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">Contact Person : </td>
+            <td align="left"   class="value">'.$ContactPerson.'  '.$ContactPersonName.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">Email : </td>
+            <td align="left" "  class="value">'.$Email.'</td>
+            <td align="center"  class="name">Title : </td>
+            <td align="left" "  class="value">'.$Title.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">Tel : </td>
+            <td align="left"   class="value">'.$Tel.'</td>
+            <td align="center"  class="name">Fax : </td>
+            <td align="left"  class="value">'.$Fax.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">Moblie : </td>
+            <td align="left"   class="value">'.$Mobile.'</td>
+            <td align="center"  class="name">Country : </td>
+            <td align="left"   class="value">'.$Country.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">Skype : </td>
+            <td align="left"   class="value">'.$Skype.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">State/Province : </td>
+            <td align="left"   class="value">'.$State.'</td>
+            <td align="center"  class="name">City : </td>
+            <td align="left"   class="value">'.$City.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">ZIP CODE : </td>
+            <td align="left"   class="value">'.$ZIPCode.'</td>
+            <td align="center"  class="name">Address : </td>
+            <td align="left"   class="value">'.$Address.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">You are a  </td>
+            <td align="left"  class="value">'.$CustomerIdentity.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">How many people </td>
+            <td align="left"  class="value">'.$CustomerIdentity.'in your company</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">How do you know about our company </td>
+            <td align="left"  class="value">'.$SearchInfo.'</td>
+            <td align="left" class="value">'.$SearchInfoOther.'</td>
+        </tr>
+        <tr>
+            <td align="center" class="name">Request</td>
+            <td align="left" class="value">'.$request.'</td>
+        </tr>
+        <tr>
+            <td align="center"  class="name">Send Catalog </td>
+            <td align="left"  class="value">'.$SendCatalog.'</td>
+        </tr>
+    </table>
+</body>
+</html>';
 
     echo $mailContent;
 
@@ -120,16 +153,16 @@
 
     $mail->SingleTo   =true;
 
-    $email="tim@activa.com.tw";
+    $email="andy.young@activa.com.tw";
     // 收件者信箱
-    $name="activaTim";
+    $name="activa Andy Young";
     // 收件者的名稱or暱稱
 
     $mail->AddAddress($email,$name);
 
-    $mail->Subject    = "test subject";
+    $mail->Subject    = "It is test mail";
 
-    $mail->Body       = "content";  
+    $mail->Body       =  $mailContent;  
 
     $mail->IsHTML(true); // send as HTML
 
@@ -140,6 +173,7 @@
     }
     else{ 
     echo "寄信成功";
+    $mail->Send()
     }*/
 
 ?>

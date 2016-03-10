@@ -1,5 +1,5 @@
 <div id="ContactPage">
-	
+
 	<div id="contactpage_Head" class="has-feedback marginTopSet_8 SourceHanSansbold">
 		<img class="img-responsive" src="image/Contant_pic.jpg" />
 		<p class="pagetitle contactpage_title ">Contact</p>
@@ -19,7 +19,7 @@
 				</p>
 			</div>
 
-			<form  id="CustomerInfo" name="visitorForm" class="col-xs-12 col-md-12 col-lg-12 col-centered prod_info_Font22" method="POST">
+			<form  id="CustomerInfo" name="visitorForm" class="col-xs-12 col-md-12 col-lg-12 col-centered prod_info_Font22" method="POST" action="sendto.php">
 				<hr class="Formhr">
 	    			<label class="col-xs-3 col-md-3 col-lg-3">*Company Name :&nbsp;</label>
 	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="CompanyName">
@@ -27,9 +27,13 @@
 	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Website">		
 				<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-3 col-md-3 col-lg-3">*Contact Person :&nbsp;</label>
-					<label class="col-xs-3 col-md-3 col-lg-3 ">
+					<label class="col-xs-1 col-md-1 col-lg-1 ">
 						<input  type="radio" name="ContactPersonRadio"  value="Mr"> Mr
+					</label>
+					<label class="col-xs-1 col-md-1 col-lg-1 ">
 						<input  type="radio" name="ContactPersonRadio"  value="Mrs"> Mrs
+					</label>
+					<label class="col-xs-1 col-md-1 col-lg-1 ">
 						<input  type="radio" name="ContactPersonRadio"  value="Miss"> Miss
 					</label>
 					<input class="col-xs-6 col-md-6 col-lg-6" type="text" name="ContactPersonName">
@@ -104,7 +108,7 @@
 				</label>
 				<label class="col-xs-12 col-md-12 col-lg-12 marginTopSet_3">
 					<button type="reset" class="btn btn-default btn-lg margin-left-right_5">Reset</button>
-					<button class="btn btn-default btn-lg margin-left-right_5" onclick = "checkContactForm()">Submit</button>
+					<button type="submit" class="btn btn-default btn-lg margin-left-right_5">Submit</button>
 				</label>
 			</form>
    
@@ -112,3 +116,61 @@
 	</div><!-- end contactpage_body container -->
 
 </div>
+<script>
+$("#CustomerInfo").submit(function( event ) {
+
+  	var errorVal=0;
+
+	if(visitorForm.CompanyName.value == ""){
+		$("#CustomerInfo input[name='CompanyName']").addClass("error");
+		alert("Company Name must be filled in.");
+		errorVal+=1;
+		console.log(errorVal);
+		event.preventDefault();
+	}
+	if($('input[name=ContactPersonRadio]:checked').length == 0){
+		alert("Please check your select, In Contact Person item.");
+		errorVal+=1;
+		console.log(errorVal);
+		event.preventDefault();
+	}
+	if(visitorForm.Email.value == ""){
+		$("#CustomerInfo input[name='Email']").addClass("error");
+		alert("Email must be filled in.");
+		errorVal+=1;
+		console.log(errorVal);
+		event.preventDefault();
+	}
+	if(visitorForm.Tel.value == ""){
+		$("#CustomerInfo input[name='Tel']").addClass("error");
+		alert("Tel must be filled in.");
+		errorVal+=1;
+		console.log(errorVal);
+		event.preventDefault();
+	}
+	if(visitorForm.Mobile.value == ""){
+		$("#CustomerInfo input[name='Mobile']").addClass("error");
+		alert("Mobile must be filled in.");
+		errorVal+=1;
+		console.log(errorVal);
+		event.preventDefault();
+	}
+	if(visitorForm.ZIPCode.value == ""){
+		$("#CustomerInfo input[name='ZIPCode']").addClass("error");
+		alert("ZIPCode must be filled in.");
+		errorVal+=1;
+		console.log(errorVal);
+		event.preventDefault();
+	}
+	if($('input[name=SearchInfo]:checked').length == 0){
+		alert("Please check your select, In How do you know about our company item.");
+		errorVal+=1;
+		console.log(errorVal);
+		event.preventDefault();
+	}
+	if(errorVal==0){
+		$( "#CustomerInfo" ).submit();
+	}
+
+});
+</script>
