@@ -412,6 +412,12 @@ footer div{
 .marginSet_0{
 	margin: 0px !important;
 }
+.marginTopSet_1{
+	margin-top: 1%;
+}
+.marginTopSet_2{
+	margin-top: 2%;
+}
 .marginTopSet_3{
 	margin-top: 3%;
 }
@@ -487,6 +493,9 @@ footer div{
 }
 .fontcolor_white{
 	color: white;
+}
+.fontcolor_858585{
+	color: #858585;
 }
 .fontcolor_808080{
 	color: #808080;
@@ -566,9 +575,6 @@ footer div{
    width: 100% !important; 
    background-color: #4D4D4D !important;
 }
-input[type="radio"]{
-	margin-left: 4% !important;
-}
 
 /*位置相關設定*/
 .setPosition_50{
@@ -585,9 +591,22 @@ input[type="radio"]{
 
 
 /*表單*/
+.radio_set{
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin: 0px !important;
+}
+.input_width250px{
+	width: 250px;
+}
 .error
 {
 	border: 1px solid #800000;
 	box-shadow: 0px 0px 5px #800000;
+}
+.error_word
+{
+	color: #800000;
 }
 /*============================================================================*/

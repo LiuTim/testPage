@@ -47,7 +47,7 @@
         .name{
             font-weight: bold;
             width: 100px;
-            font-size: 22px;
+            font-size: 20px;
             background-color: #4F4F4F;
             color: white;
         }
@@ -144,23 +144,26 @@
     $mail->CharSet    = "utf-8";
     $mail->Encoding   = "base64";
 
-    $mail->Username   = "lchangchih@gmail.com";  
-    $mail->Password   = "";  //需要輸入gmail password
+    $mail->Username   = "activafindlight@gmail.com";  
+    $mail->Password   = "findlight2824356";  //需要輸入gmail password
     //需要設定gmail登入和安全性，設定「允許安全性較低的應用程式存取您的帳戶」
 
-    $mail->From       = "lchangchih@gmail.com";
-    $mail->FromName   = "findlight test"; //可以照自己的意思輸入
+    $mail->From       = "activafindlight@gmail.com";
+    $mail->FromName   = "Activa Findlight"; //可以照自己的意思輸入
 
     $mail->SingleTo   =true;
 
-    $email="andy.young@activa.com.tw";
+    $email="info@findlight.com.tw,andy.young@findlight.com.tw";
     // 收件者信箱
-    $name="activa Andy Young";
-    // 收件者的名稱or暱稱
+    $srecipients = explode(",", $email); 
+    // 切割逗號
 
-    $mail->AddAddress($email,$name);
+    foreach ($srecipients as $srecipient){
+        $mail->addAddress($srecipient);
+    }  
 
-    $mail->Subject    = "It is test mail";
+
+    $mail->Subject    = "Find Light 網站 - 聯絡我們來信";
 
     $mail->Body       =  $mailContent;  
 
@@ -173,7 +176,7 @@
     }
     else{ 
     echo "寄信成功";
-    $mail->Send()
-    }*/
-
+    $mail->Send();
+    }
+    */
 ?>

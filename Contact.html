@@ -19,22 +19,22 @@
 				</p>
 			</div>
 
-			<form  id="CustomerInfo" name="visitorForm" class="col-xs-12 col-md-12 col-lg-12 col-centered prod_info_Font22" method="POST" action="sendto.php">
+			<form id="CustomerInfo" name="visitorForm" class="col-xs-12 col-md-12 col-lg-12 col-centered prod_info_Font22" method="POST" action="sendto.php">
 				<hr class="Formhr">
 	    			<label class="col-xs-3 col-md-3 col-lg-3">*Company Name :&nbsp;</label>
 	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="CompanyName">
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >Website :&nbsp;</label>
 	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Website">		
 				<hr class="Formhr marginTopSet_6">
-					<label class="col-xs-3 col-md-3 col-lg-3">*Contact Person :&nbsp;</label>
+					<label id="ContactPersonLH" class="col-xs-3 col-md-3 col-lg-3">*Contact Person :&nbsp;</label>
 					<label class="col-xs-1 col-md-1 col-lg-1 ">
-						<input  type="radio" name="ContactPersonRadio"  value="Mr"> Mr
+						<input class="radio_set" type="radio" name="ContactPersonRadio"  value="Mr"> Mr
 					</label>
 					<label class="col-xs-1 col-md-1 col-lg-1 ">
-						<input  type="radio" name="ContactPersonRadio"  value="Mrs"> Mrs
+						<input class="radio_set" type="radio" name="ContactPersonRadio"  value="Mrs"> Mrs
 					</label>
 					<label class="col-xs-1 col-md-1 col-lg-1 ">
-						<input  type="radio" name="ContactPersonRadio"  value="Miss"> Miss
+						<input class="radio_set" type="radio" name="ContactPersonRadio"  value="Miss"> Miss
 					</label>
 					<input class="col-xs-6 col-md-6 col-lg-6" type="text" name="ContactPersonName">
 				<hr class="Formhr marginTopSet_6">
@@ -67,49 +67,80 @@
 	    			<label class="col-xs-3 col-md-3 col-lg-3" >Address :&nbsp;</label>
 	    			<input class="col-xs-3 col-md-3 col-lg-3" type="text" name="Address">
 	    		<hr class="Formhr marginTopSet_6">
-					<label class="col-xs-3 col-md-3 col-lg-3">You are a</label>
-					<label class="col-xs-9 col-md-9 col-lg-9">
-						<input  type="radio" name="CustomerIdentity"  value="EndUser"> end user
-						<input  type="radio" name="CustomerIdentity"  value="importer"> importer
-						<input  type="radio" name="CustomerIdentity"  value="distributor"> distributor
-						<input  type="radio" name="CustomerIdentity"  value="manufacturer"> manufacturer 
-						<input  type="radio" name="CustomerIdentity"  value="exporter"> exporter
-					</label>
-				<hr class="Formhr marginTopSet_6">
+					<label class="col-xs-2 col-md-2 col-lg-2 text-right">You are a</label>
+						<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CustomerIdentity"  value="EndUser"> end user
+						</label>
+						<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CustomerIdentity"  value="importer"> importer
+						</label>
+						<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CustomerIdentity"  value="distributor"> distributor
+						</label>
+						<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CustomerIdentity"  value="manufacturer"> manufacturer 
+						</label>
+						<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CustomerIdentity"  value="exporter"> exporter
+						</label>			
+				<hr class="Formhr marginTopSet_3">
 					<label class="col-xs-3 col-md-3 col-lg-3">How many people </label>
-					<label class="col-xs-9 col-md-9 col-lg-9">
-						<input  type="radio" name="CompanyPeople"  value="1-10"> 1-10 people 
-						<input  type="radio" name="CompanyPeople"  value="11-50"> 11-50 people  
-						<input  type="radio" name="CompanyPeople"  value="51-100"> 51-100 people
-						<input  type="radio" name="CompanyPeople"  value="101-200"> 101-200 people 
-						<input  type="radio" name="CompanyPeople"  value="201up"> 201 above
-					in your company
-					</label>
+						<label class="col-xs-3 col-md-3 col-lg-3 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CompanyPeople"  value="1-10"> 1-10 people
+						</label>
+						<label class="col-xs-3 col-md-3 col-lg-3 fontcolor_858585"> 
+							<input class="radio_set" type="radio" name="CompanyPeople"  value="11-50"> 11-50 people  
+						</label>
+						<label class="col-xs-3 col-md-3 col-lg-3 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CompanyPeople"  value="51-100"> 51-100 people
+						</label>
+						<label class="col-xs-3 col-md-3 col-lg-3 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CompanyPeople"  value="101-200"> 101-200 people 
+						</label>
+						<label class="col-xs-3 col-md-3 col-lg-3 fontcolor_858585">
+							<input class="radio_set" type="radio" name="CompanyPeople"  value="201up"> 201 above
+						</label>
+					<label class="col-xs-3 col-md-3 col-lg-3">in your company</label>
+						
 				<hr class="Formhr marginTopSet_6">
-					<label class="col-xs-6 col-md-6 col-lg-6 text-left">*How do you know about our company</label>
-					<label class="col-xs-12 col-md-12 col-lg-12">
-						<input  type="radio" name="SearchInfo"  value="Alibaba"> Alibaba.com 
-						<input  type="radio" name="SearchInfo"  value="TWTrade"> Taiwan Trade  
-						<input  type="radio" name="SearchInfo"  value="Google"> Google Search
-						<input  type="radio" name="SearchInfo"  value="Other"> Other 
-						<input  type="text" name="SearchInfoOther"> 
-					</label>
+					<label id="SearchInfoLH" class="col-xs-12 col-md-12 col-lg-12 text-left">*How do you know about our company</label>
+					<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+						<input class="radio_set" type="radio" name="SearchInfo"  value="Alibaba"> Alibaba.com
+					</label> 
+					<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+						<input class="radio_set" type="radio" name="SearchInfo"  value="TWTrade"> Taiwan Trade 
+					</label> 
+					<label class="col-xs-3 col-md-3 col-lg-3 fontcolor_858585"> 
+						<input class="radio_set" type="radio" name="SearchInfo"  value="Google"> Google Search
+					</label> 
+					<label class="col-xs-2 col-md-2 col-lg-2 fontcolor_858585">
+						<input class="radio_set" type="radio" name="SearchInfo"  value="Other"> Other 
+					</label> 
+					<label class="col-xs-3 col-md-3 col-lg-3">
+						<input class="input_width250px" type="text" name="SearchInfoOther"> 
+					</label> 
 				<hr class="Formhr marginTopSet_6">
 					<label class="col-xs-6 col-md-6 col-lg-6 text-left">Please Specify Your Request</label>
 					<textarea class="col-xs-12 col-md-12 col-lg-12 text-left" rows="5" name="request" form="CustomerInfo"></textarea>
-				<label class="col-xs-6 col-md-6 col-lg-6 text-left marginTopSet_3">Send me catalog?
-						<input  type="radio" name="SendCatalog"  value="yes"> Yes 
-						<input  type="radio" name="SendCatalog"  value="no"> Not Yet 
-				</label>
+					<label class="col-xs-3 col-md-3 col-lg-3 text-left marginTopSet_2">Send me catalog?</label>
+					<label class="col-xs-1 col-md-1 col-lg-1 marginTopSet_2 text-left">
+						<input class="radio_set" type="radio" name="SendCatalog" value="yes"> Yes 
+					</label>
+					<label class="col-xs-2 col-md-2 col-lg-2 marginTopSet_2 text-left">
+						<input class="radio_set" type="radio" name="SendCatalog" value="no"> Not Yet 
+					</label>
 				<label class="col-xs-12 col-md-12 col-lg-12 marginTopSet_3">
 					<p class="text-center" style="color: #AE272D;"> 
 					The infomation is used for internal purposed only and will not be shared to third party.
 					</p>
 				</label>
-				<label class="col-xs-12 col-md-12 col-lg-12 marginTopSet_3">
+				<label class="col-xs-6 col-md-6 col-lg-6 marginTopSet_3 text-right">
 					<button type="reset" class="btn btn-default btn-lg margin-left-right_5">Reset</button>
+				</label>
+				<label class="col-xs-6 col-md-6 col-lg-6 marginTopSet_3 text-left">
 					<button type="submit" class="btn btn-default btn-lg margin-left-right_5">Submit</button>
 				</label>
+				
 			</form>
    
 		</div><!-- end of row -->
@@ -130,6 +161,7 @@ $("#CustomerInfo").submit(function( event ) {
 	}
 	if($('input[name=ContactPersonRadio]:checked').length == 0){
 		alert("Please check your select, In Contact Person item.");
+		$("#ContactPersonLH").addClass("error_word");
 		errorVal+=1;
 		console.log(errorVal);
 		event.preventDefault();
@@ -164,6 +196,7 @@ $("#CustomerInfo").submit(function( event ) {
 	}
 	if($('input[name=SearchInfo]:checked').length == 0){
 		alert("Please check your select, In How do you know about our company item.");
+		$("#SearchInfoLH ").addClass("error_word");
 		errorVal+=1;
 		console.log(errorVal);
 		event.preventDefault();
