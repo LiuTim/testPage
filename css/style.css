@@ -1,0 +1,17 @@
+header,footer{
+	display: block;
+}
+main{
+	display: block;
+}
+td{
+	text-align: center;
+}
+#content{
+	margin-top:4%;
+}
+#aside{
+	margin-top:4%;
+	height: 100%;
+	background-color: #f1f1f1 ;
+}
